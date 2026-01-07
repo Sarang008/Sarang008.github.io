@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Sarang Shastry</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 900px;
+      margin: 60px auto;
+      line-height: 1.6;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    .sidebar {
+      float: left;
+      width: 250px;
+      margin-right: 40px;
+    }
+    .content {
+      overflow: hidden;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Sarang</h1>
+
+<div class="sidebar">
+  <h2>Sarang Shastry</h2>
   <p>Researcher in Theoretical Computer Science</p>
+  <p>
+    <a href="#">GitHub</a><br>
+    <a href="#">Google Scholar</a><br>
+    <a href="#">ORCID</a>
+  </p>
+</div>
+
+<div class="content">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <h2 id="about">About</h2>
+  <p>I work on formal verification and cryptography...</p>
+
+  <h2 id="research">Research</h2>
+  <ul>
+    <li>Formal Methods</li>
+    <li>Cryptography</li>
+    <li>Proof Assistants (Coq, Lean)</li>
+  </ul>
+</div>
+
 </body>
 </html>
