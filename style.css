@@ -1,67 +1,105 @@
+/* ===== Color palette ===== */
+:root {
+  --bg: #f9fafb;              /* page background */
+  --panel: #ffffff;           /* content background */
+  --primary: #1f4fd8;         /* link / accent */
+  --secondary: #0f766e;       /* subtle accent */
+  --text: #1f2937;            /* main text */
+  --muted: #6b7280;           /* secondary text */
+  --border: #e5e7eb;
+}
+
 /* ===== Global ===== */
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #222;
   margin: 0;
   padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /* ===== Layout ===== */
 .container {
   display: flex;
-  max-width: 1000px;
-  margin: 60px auto;
+  max-width: 1050px;
+  margin: 70px auto;
+  background: var(--panel);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
 /* ===== Sidebar ===== */
 .sidebar {
-  width: 240px;
-  margin-right: 50px;
+  width: 260px;
+  padding-right: 40px;
+  border-right: 1px solid var(--border);
 }
 
 .sidebar h1 {
-  font-size: 26px;
-  margin-bottom: 8px;
+  font-size: 28px;
+  margin-bottom: 6px;
 }
 
 .subtitle {
   font-size: 15px;
-  margin-top: 0;
+  color: var(--muted);
   margin-bottom: 25px;
 }
 
 .links a {
   display: block;
-  color: #1a73e8;
+  margin-bottom: 10px;
   text-decoration: none;
-  margin-bottom: 8px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
 }
 
 /* ===== Main content ===== */
 .main {
   flex: 1;
+  padding-left: 40px;
 }
 
 nav {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 nav a {
-  margin-right: 18px;
+  margin-right: 22px;
   text-decoration: none;
-  color: #1a73e8;
   font-size: 15px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: 23px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 16px;
 }
 
 ul {
   margin-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
 }
